@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5eb2925-d148-4490-9305-fd4bad9a2e86" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/factories/NotificationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/factories/NotificationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/ManagerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/ManagerAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/account/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/catalog/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/catalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/catalog/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/EmailNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/PhoneNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/notifications/PhoneNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/BankTransferPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/BankTransferPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/CreditCardPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/AppLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/AppLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/StringUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

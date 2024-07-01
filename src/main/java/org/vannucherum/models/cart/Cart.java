@@ -6,7 +6,9 @@ import org.vannucherum.models.account.Address;
 import org.vannucherum.models.payment.BankTransferPayment;
 import org.vannucherum.models.account.Customer;
 import org.vannucherum.models.catalog.Product;
+import org.vannucherum.models.payment.CashOnDelivery;
 import org.vannucherum.models.payment.CreditCardPayment;
+import org.vannucherum.models.payment.UPIPayment;
 import org.vannucherum.utils.AppLogger;
 
 import java.util.HashMap;
@@ -74,7 +76,7 @@ public class Cart {
     }
 
     public Order checkout(Address address, PaymentMethod paymentMethod) {
-        System.out.println(String.format("Checking out cart"));
+        AppLogger.logInfo("Checking out cart");
         Order order = null;
         switch (paymentMethod) {
             case CREDIT_CARD -> {
@@ -84,6 +86,14 @@ public class Cart {
             case BANK_TRANSFER -> {
                 BankTransferPayment bankTransferPayment = new BankTransferPayment(this.getCartTotal(), this.getCustomer());
                 order = bankTransferPayment.processPayment(this, address);
+            }
+            case UPI -> {
+                UPIPayment upiPayment = new UPIPayment(this.getCartTotal(), this.getCustomer());
+                order = upiPayment.processPayment(this, address);
+            }
+            case CASH_ON_DELIVERY -> {
+                CashOnDelivery cashOnDelivery = new CashOnDelivery(this.getCartTotal(), this.getCustomer());
+                order = cashOnDelivery.processPayment(this, address);
             }
         }
         clearCart();
