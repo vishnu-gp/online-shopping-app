@@ -1,5 +1,5 @@
 package org.vannucherum.enums;
 
 public enum PaymentStatus {
-    PENDING, FAILED, COMPLETED, REFUNDED
+    CREATED, PENDING, FAILED, COMPLETED, REFUNDED
 }

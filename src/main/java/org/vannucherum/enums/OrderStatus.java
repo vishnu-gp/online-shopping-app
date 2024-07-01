@@ -1,5 +1,5 @@
 package org.vannucherum.enums;
 
 public enum OrderStatus {
-    ORDERED, CANCELLED, SHIPPED, RETURNED
+    INITIATED, ORDERED, CANCELLED, SHIPPED, RETURNED
 }
