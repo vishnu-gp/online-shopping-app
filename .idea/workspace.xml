@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5eb2925-d148-4490-9305-fd4bad9a2e86" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/AppLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/AppLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/utils/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

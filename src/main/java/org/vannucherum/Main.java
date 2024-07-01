@@ -1,8 +1,10 @@
 package org.vannucherum;
 
+import org.vannucherum.utils.AppLogger;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        AppLogger.logInfo("Welcome to the online shopping app!");
     }
 }
 
