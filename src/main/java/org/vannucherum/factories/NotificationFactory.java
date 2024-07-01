@@ -6,7 +6,12 @@ import org.vannucherum.models.notifications.Notification;
 import org.vannucherum.models.notifications.EmailNotification;
 import org.vannucherum.models.notifications.PhoneNotification;
 
-public class NotificationFactory {
+public class NotificationFactory extends BaseFactory{
+
+    protected NotificationFactory() {
+        super();
+    }
+
     public static Notification createNotification(NotificationType type, Customer customer) {
         switch (type) {
             case EMAIL:

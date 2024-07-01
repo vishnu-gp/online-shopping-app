@@ -7,6 +7,7 @@ import org.vannucherum.models.payment.BankTransferPayment;
 import org.vannucherum.models.account.Customer;
 import org.vannucherum.models.catalog.Product;
 import org.vannucherum.models.payment.CreditCardPayment;
+import org.vannucherum.utils.AppLogger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -44,7 +45,7 @@ public class Cart {
             products.put(product.getId(), new CartProduct(product, quantity));
         }
         cartTotal += product.getPrice() * quantity;
-        System.out.println(String.format("Product: %s added to the cart", product.getName()));
+        AppLogger.logInfo(String.format("Product: %s added to the cart", product.getName()));
 
         return true;
     }
@@ -57,7 +58,7 @@ public class Cart {
                 products.remove(product.getId());
             }
             cartTotal -= product.getPrice() * quantity;
-            System.out.println(String.format("Product: %s removed from the cart", product.getName()));
+            AppLogger.logInfo(String.format("Product: %s removed from the cart", product.getName()));
             return true;
         }
 
@@ -67,7 +68,8 @@ public class Cart {
     public Cart clearCart() {
         this.products.clear();
         this.cartTotal = 0;
-        System.out.println(String.format("Cart cleared successfully"));
+        AppLogger.logInfo("Cart cleared successfully");
+
         return this;
     }
 

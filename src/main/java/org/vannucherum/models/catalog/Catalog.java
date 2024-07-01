@@ -39,6 +39,6 @@ public class Catalog {
         return  productIds.stream()
                 .map(products::get)
                 .filter(Objects::nonNull)
-                .collect(Collectors.toList());
+                .toList();
     }
 }

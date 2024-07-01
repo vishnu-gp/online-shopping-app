@@ -1,6 +1,7 @@
 package org.vannucherum.models.notifications;
 
 import org.vannucherum.models.account.Customer;
+import org.vannucherum.utils.AppLogger;
 
 public class EmailNotification extends Notification {
     private String subject;
@@ -12,7 +13,7 @@ public class EmailNotification extends Notification {
 
     @Override
     public Notification sendNotification() {
-        System.out.println("Sending notification via Email");
+        AppLogger.logInfo("Sending notification via Email");
 
         return super.sendNotification();
     }

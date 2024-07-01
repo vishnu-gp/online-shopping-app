@@ -2,6 +2,7 @@ package org.vannucherum.models.catalog;
 
 import org.vannucherum.models.account.Customer;
 import org.vannucherum.models.account.Seller;
+import org.vannucherum.utils.AppLogger;
 import org.vannucherum.utils.StringUtil;
 
 import java.util.HashMap;
@@ -73,7 +74,8 @@ public class Product {
     public Review addReview (String title, String description, Double rating, Customer customer) {
         Review review = new Review(title, description, rating, customer);
         this.reviews.put(review.getId(), review);
-        System.out.println(String.format("Review added for product: %s", this.getId()));
+        AppLogger.logInfo(String.format("Review added for product: %s", this.getId()));
+
         return review;
     }
 }

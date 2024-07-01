@@ -1,6 +1,7 @@
 package org.vannucherum.models.account;
 
 import org.vannucherum.enums.AccountStatus;
+import org.vannucherum.utils.AppLogger;
 
 public class Account {
     private String name;
@@ -36,15 +37,15 @@ public class Account {
     public boolean login(String password) {
         boolean authenticated = this.password.equals(password);
         if (!authenticated) {
-            System.out.println("Authentication failed for account: " + this.email);
+            AppLogger.logError(String.format("Authentication failed for account: %s", this.email));
         }
         else {
-            System.out.println("Logged in to account: " + this.email);
+            AppLogger.logInfo(String.format("Logged in to account: %s", this.email));
         }
         return authenticated;
     }
 
     public void logout() {
-        System.out.println("Logged out account: " + this.email);
+        AppLogger.logInfo(String.format("Logged out account: %s", this.email));
     }
  }

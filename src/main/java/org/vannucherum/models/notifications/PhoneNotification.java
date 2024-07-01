@@ -1,6 +1,7 @@
 package org.vannucherum.models.notifications;
 
 import org.vannucherum.models.account.Customer;
+import org.vannucherum.utils.AppLogger;
 
 public class PhoneNotification extends Notification {
     private String phone;
@@ -11,7 +12,8 @@ public class PhoneNotification extends Notification {
 
     @Override
     public Notification sendNotification() {
-        System.out.println("Sending notification via Phone");
+        AppLogger.logInfo("Sending notification via Phone");
+        
         return super.sendNotification();
     }
 }

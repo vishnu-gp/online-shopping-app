@@ -1,6 +1,7 @@
 package org.vannucherum.models.payment;
 
 import org.vannucherum.models.account.Customer;
+import org.vannucherum.utils.AppLogger;
 
 public class BankTransferPayment extends Payment {
 
@@ -10,7 +11,8 @@ public class BankTransferPayment extends Payment {
 
     @Override
     protected boolean pay() {
-        System.out.println("Payment completed via Bank Transfer");
+        AppLogger.logInfo("Payment completed via Bank Transfer");
+
         return true;
     }
 }

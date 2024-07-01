@@ -3,6 +3,7 @@ package org.vannucherum.models.notifications;
 import org.vannucherum.enums.NotificationStatus;
 import org.vannucherum.interfaces.Notifiable;
 import org.vannucherum.models.account.Customer;
+import org.vannucherum.utils.AppLogger;
 
 import java.time.Instant;
 
@@ -11,7 +12,7 @@ public abstract class Notification implements Notifiable {
     private Instant dispatchedAt;
     private NotificationStatus status;
 
-    public Notification(Customer customer) {
+    protected Notification(Customer customer) {
         this.customer = customer;
         this.status = NotificationStatus.CREATED;
     }
@@ -39,7 +40,7 @@ public abstract class Notification implements Notifiable {
     public Notification sendNotification() {
         this.setStatus(NotificationStatus.DISPATCHED);
         this.setDispatchedAt(Instant.now());
-        System.out.println(String.format("Notification dispatched successfully"));
+        AppLogger.logInfo("Notification dispatched successfully");
 
         return this;
     }

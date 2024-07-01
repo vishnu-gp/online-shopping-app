@@ -5,6 +5,7 @@ import org.vannucherum.interfaces.CategoryManger;
 import org.vannucherum.interfaces.ProductManager;
 import org.vannucherum.models.catalog.Catalog;
 import org.vannucherum.models.catalog.Category;
+import org.vannucherum.utils.AppLogger;
 
 public class Admin extends ManagerAccount implements ProductManager, CategoryManger {
 
@@ -15,7 +16,7 @@ public class Admin extends ManagerAccount implements ProductManager, CategoryMan
     @Override
     public Catalog addCategory(Catalog catalog, Category category) {
         catalog.getCategories().put(category.getId(), category);
-        System.out.println(String.format("Category: %s added to catalog.", category.getName()));
+        AppLogger.logInfo(String.format("Category: %s added to catalog.", category.getName()));
 
         return catalog;
     }
@@ -25,7 +26,7 @@ public class Admin extends ManagerAccount implements ProductManager, CategoryMan
         catalog.getCategories().remove(category);
         // TODO: Remove products that belongs to the category or change it's category.
         // TODO: Remove products from the search map in catalog if product is removed.
-        System.out.println(String.format("Category: %s removed from the catalog", category.getName()));
+        AppLogger.logInfo(String.format("Category: %s removed from the catalog", category.getName()));
 
         return catalog;
     }

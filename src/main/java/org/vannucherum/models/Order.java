@@ -7,6 +7,7 @@ import org.vannucherum.interfaces.PaymentStrategy;
 import org.vannucherum.models.account.Customer;
 import org.vannucherum.models.cart.CartProduct;
 import org.vannucherum.models.notifications.Notification;
+import org.vannucherum.utils.AppLogger;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -104,7 +105,8 @@ public class Order {
         this.getShipment().setShippedAt(Instant.now());
         this.getShipment().setDeliveryDate(Instant.now().plus(7, ChronoUnit.DAYS));
         this.setStatus(OrderStatus.SHIPPED);
-        System.out.println(String.format("Order shipped. Expect Delivery to %s on %s", this.getShipment().getAddress().getFullAddress(), this.getShipment().getDeliveryDate().toString()));
+        AppLogger.logInfo(String.format("Order shipped. Expect Delivery to %s on %s", this.getShipment().getAddress().getFullAddress(), this.getShipment().getDeliveryDate().toString()));
+
         return this;
     }
 
