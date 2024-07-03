@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5eb2925-d148-4490-9305-fd4bad9a2e86" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/factories/PaymentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/factories/PaymentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vannucherum/models/cart/Cart.java" afterDir="false" />
-    </list>
+    <list default="true" id="f5eb2925-d148-4490-9305-fd4bad9a2e86" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,11 +59,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/vannucherum/models/catalog/Product.java</url>
           <line>78</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vannucherum/Main.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
