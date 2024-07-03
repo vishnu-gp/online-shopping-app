@@ -7,6 +7,9 @@ import org.vannucherum.utils.StringUtil;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Product {
     private final String id;
@@ -65,6 +68,15 @@ public class Product {
 
     public Map<String, Review> getReviews() {
         return reviews;
+    }
+
+    public List<String> getSearchKeywords() {
+        List<String> nameKeywords = Arrays.asList(this.name.toLowerCase().split(" "));
+        List<String> descriptionKeywords = Arrays.asList(this.description.toLowerCase().split(" "));
+        List<String> combinedList = new ArrayList<>(nameKeywords);
+        combinedList.addAll(descriptionKeywords);
+
+        return combinedList;
     }
 
     public void setStock(int stock) {

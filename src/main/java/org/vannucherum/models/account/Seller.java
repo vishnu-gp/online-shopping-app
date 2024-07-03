@@ -13,6 +13,10 @@ public class Seller extends ManagerAccount {
         this.address = address;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
     @Override
     public Catalog addProduct(Catalog catalog, Product product) {
         if(!this.authorizeProduct(product)) {

@@ -14,6 +14,6 @@ public class Address {
     }
 
     public String getFullAddress() {
-        return name + "\n" + line1 + "\n" + line2 + "/n" + phone;
+        return "\n" + name + "\n" + line1 + "\n" + line2 + "\n" + phone + "\n";
     }
 }

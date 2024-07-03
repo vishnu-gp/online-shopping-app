@@ -23,6 +23,10 @@ public abstract class Payment implements PaymentStrategy {
         this.customer = customer;
     }
 
+    public void setStatus(PaymentStatus status) {
+        this.status = status;
+    }
+
     private Order.Builder buildOrder(Cart cart) {
         Order.Builder orderBuilder =  new Order.Builder()
                 .setCustomer(this.customer)
@@ -49,7 +53,9 @@ public abstract class Payment implements PaymentStrategy {
     public final Order processPayment(Cart cart, Address deliveryAddress) {
         AppLogger.logInfo("Processing payment");
         Order.Builder orderBuilder = buildOrder(cart);
-        pay();
+        if (pay()) {
+            this.setStatus(PaymentStatus.COMPLETED);
+        }
         orderBuilder.setStatus(OrderStatus.INITIATED);
         if (this.status.equals(PaymentStatus.COMPLETED)) {
             orderBuilder.setStatus(OrderStatus.ORDERED);

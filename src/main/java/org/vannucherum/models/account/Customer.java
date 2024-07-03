@@ -11,4 +11,8 @@ public class Customer extends Account {
         super(name, email, password, phone, status);
         this.addressList = addressList;
     }
+
+    public List<Address> getAddressList() {
+        return addressList;
+    }
 }
