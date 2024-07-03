@@ -19,15 +19,15 @@ public class Main {
 
         // Create Admin, Seller and Customer
         List<Address> aliceAddresses = List.of(
-                new Address("Alice", "711-2880 Nulla St.", "Mankato Mississippi 96522", "(257) 563-7401"),
-                new Address("Alice", "606-3727 Ullamcorper. Street", "Roseville NH 11523", "(786) 713-8616")
+                new Address("Alice Mississippi", "711-2880 Nulla St.", "Mankato Mississippi 96522", "(257) 563-7401"),
+                new Address("Alice NH", "606-3727 Ullamcorper. Street", "Roseville NH 11523", "(786) 713-8616")
         );
 
         Customer customer = new Customer("Alice","alice@vannucherum.com", "alicepassword", "(257) 563-7401", AccountStatus.ACTIVE, aliceAddresses);
 
         Address bobAddress = new Address("Bob", "P.O. Box 887 2508 Dolor. Av.", "Muskegon KY 12482", "(314) 244-6306");
-        Seller seller = new Seller("Bob", "bob@vannucherum.com" ,"bobpassword", "(314) 244-6306", AccountStatus.ACTIVE, bobAddress);
-        Seller seller2 = new Seller("Taylor", "taylor@vannucherum.com" ,"taylorpassword", "(314) 244-6306", AccountStatus.ACTIVE, bobAddress);
+        Seller seller = new Seller("Bob", "bob@vannucherum.com" ,"bobpassword", "(314) 274-6306", AccountStatus.ACTIVE, bobAddress);
+        Seller seller2 = new Seller("Taylor", "taylor@vannucherum.com" ,"taylorpassword", "(314) 248-6306", AccountStatus.ACTIVE, bobAddress);
 
         Admin admin = new Admin("Vishnu", "vishnu@vannucherum.com", "vishnupassword", "(684) 579-1879", AccountStatus.ACTIVE);
 
